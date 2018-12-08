@@ -19,6 +19,7 @@ trait ExceptionTrait{
                 'error'=>'Incorrect route'
             ], Response::HTTP_NOT_FOUND);
          }
+         return parent::render($request, $exception);
 	}
 
 	public function isModel($exception){
